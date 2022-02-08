@@ -75,11 +75,12 @@
     "@types/moment-timezone": "^0.5.13",
     "angular2-virtual-scroll": "^0.4.16",
     "core-js": "^3.6.5",
-    "immer": "^8.0.1",
+    "immer": "^8.0.4",
     "intersect": "^1.0.1",
+    "lodash": "^4.17.21",
     "lodash-es": "^4.17.14",
     "mappy-breakpoints": "^0.2.3",
-    "marked": "^1.1.0",
+    "marked": "^4.0.12",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.13",
     "ngrx-store-localstorage": "10.1.1",
@@ -95,8 +96,7 @@
     "web-animations-js": "^2.3.2",
     "xterm": "^4.5.0",
     "xterm-addon-fit": "^0.3.0",
-    "zone.js": "~0.10.2",
-    "lodash": "^4.17.20"
+    "zone.js": "~0.10.2"
   },
   "engines": {
     "node": "12.13.0"
