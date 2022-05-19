@@ -5,20 +5,15 @@ go 1.18
 replace (
 	github.com/SermoDigital/jose => github.com/SermoDigital/jose v0.9.2-0.20180104203859-803625baeddc
 	github.com/Sirupsen/logrus => github.com/sirupsen/logrus v1.4.1
-	github.com/russross/blackfriday v2.0.0+incompatible => github.com/russross/blackfriday v1.5.2
-	github.com/sergi/go-diff => github.com/sergi/go-diff v1.0.0
-	github.com/smartystreets/goconvey => github.com/smartystreets/goconvey v0.0.0-20160503033757-d4c757aa9afd
-	github.com/spf13/cobra => github.com/spf13/cobra v0.0.3
-	gopkg.in/DATA-DOG/go-sqlmock.v1 => github.com/DATA-DOG/go-sqlmock v1.1.3
-	bitbucket.org/liamstask/goose => ./vendor/bitbucket.org/liamstask/goose/cmd/goose
-	github.com/antonlindstrom/pgstore => github.com/antonlindstrom/pgstore v1.0.0
-	github.com/cf-stratos/mysqlstore => ./vendor/github.com/cf-stratos/mysqlstore
-	github.com/cloudfoundry-community/go-cfenv => ./vendor/github.com/cloudfoundry-community/go-cfenv v1.18.0
+	// bitbucket.org/liamstask/goose => ./vendor/bitbucket.org/liamstask/goose/cmd/goose
+	// github.com/antonlindstrom/pgstore => github.com/antonlindstrom/pgstore v1.0.0
+	//github.com/cf-stratos/mysqlstore => ./vendor/github.com/cf-stratos/mysqlstore
+	//github.com/cloudfoundry-community/go-cfenv => ./vendor/github.com/cloudfoundry-community/go-cfenv
 	github.com/cloudfoundry-incubator/stratos/src/jetstream/crypto => ./vendor/github.com/cloudfoundry/stratos/tree/master/src/jetstream/crypto
 	github.com/cloudfoundry-incubator/stratos/src/jetstream/datastore => ./vendor/github.com/cloudfoundry/stratos/tree/master/src/jetstream/datastore
 	github.com/cloudfoundry-incubator/stratos/src/jetstream/plugins/autoscaler => ./vendor/github.com/cloudfoundry/stratos/tree/master/src/jetstream/plugins/autoscaler
 	github.com/cloudfoundry-incubator/stratos/src/jetstream/plugins/backup => ./vendor/github.com/cloudfoundry/stratos/tree/master/src/jetstream/plugins/backup
-	github.com/cloudfoundry-incubator/stratos/src/jetstream/plugins/cfapppush => ./vendor/github.com/cloudfoundry/stratos/tree/master/src/jetstream/plugins/cfapppush
+	//github.com/cloudfoundry-incubator/stratos/src/jetstream/plugins/cfapppush => ./vendor/github.com/cloudfoundry/stratos/tree/master/src/jetstream/plugins/cfapppush
 	github.com/cloudfoundry-incubator/stratos/src/jetstream/plugins/cfappssh => ./vendor/github.com/cloudfoundry/stratos/tree/master/src/jetstream/plugins/cfappssh
 	github.com/cloudfoundry-incubator/stratos/src/jetstream/plugins/cloudfoundry => ./vendor/github.com/cloudfoundry/stratos/tree/master/src/jetstream/plugins/cloudfoundry
 	github.com/cloudfoundry-incubator/stratos/src/jetstream/plugins/cloudfoundryhosting => ./vendor/github.com/cloudfoundry/stratos/tree/master/src/jetstream/plugins/cloudfoundryhosting
@@ -36,15 +31,20 @@ replace (
 	github.com/cloudfoundry-incubator/stratos/src/jetstream/repository/localusers => ./vendor/github.com/cloundfoundry-incubator/stratos/tree/master/src/jetstream/localusers
 	github.com/cloudfoundry-incubator/stratos/src/jetstream/repository/sessiondata => ./vendor/github.com/cloundfoundry-incubator/stratos/tree/master/src/jetstream/sessiondata
 	github.com/cloudfoundry-incubator/stratos/src/jetstream/repository/tokens => ./vendor/github.com/cloundfoundry-incubator/stratos/tree/master/src/jetstream/tokens
-	github.com/cloudfoundry-incubator/stratos/src/jetstream/stringutils => github.com/cloundfoundry-incubator/stratos/tree/master/src/jetstream/stringutils
+	github.com/cloudfoundry-incubator/stratos/src/jetstream/stringutils => ./vendor/github.com/cloundfoundry-incubator/stratos/tree/master/src/jetstream/stringutils
 	github.com/gorilla/context => github.com/gorilla/context v1.1.1
 	github.com/gorilla/sessions => github.com/gorilla/sessions v1.2.1
 	github.com/govau/cf-common/env => ./vendor/github.com/govau/cf-common/tree/master/env
-	github.com/labstack/echo => github.com/labstack/echo v2.0.0
+	//github.com/labstack/echo => github.com/labstack/echo v1
 	github.com/labstack/echo/middleware => ./vendor/github.com/labstack/echo/tree/master/middleware
-	github.com/nwmac/sqlitestore => github.com/nwmac/sqlitestore v1.0.0
+	github.com/russross/blackfriday v2.0.0+incompatible => github.com/russross/blackfriday v1.5.2
+	//github.com/nwmac/sqlitestore => github.com/nwmac/sqlitestore v1.0.0
 	github.com/satori/go.uuid => github.com/satori/go.uuid v1.2.0
-)	
+	github.com/sergi/go-diff => github.com/sergi/go-diff v1.0.0
+	github.com/smartystreets/goconvey => github.com/smartystreets/goconvey v0.0.0-20160503033757-d4c757aa9afd
+	github.com/spf13/cobra => github.com/spf13/cobra v0.0.3
+	gopkg.in/DATA-DOG/go-sqlmock.v1 => github.com/DATA-DOG/go-sqlmock v1.1.3
+)
 
 require (
 	bitbucket.org/liamstask/goose v0.0.0-20150115234039-8488cc47d90c
@@ -66,7 +66,7 @@ require (
 	github.com/labstack/echo v3.3.10+incompatible
 	github.com/mattn/go-sqlite3 v1.13.0
 	github.com/mholt/archiver v3.1.1+incompatible
-	github.com/nwmac/sqlitestore v0.0.0-20180824125213-7d2ab221fb3f
+	//github.com/nwmac/sqlitestore v0.0.0-20180824125213-7d2ab221fb3f
 	github.com/satori/go.uuid v1.2.0
 	github.com/sirupsen/logrus v1.3.0
 	github.com/smartystreets/goconvey v0.0.0-20190222223459-a17d461953aa
@@ -74,6 +74,8 @@ require (
 	gopkg.in/DATA-DOG/go-sqlmock.v1 v1.0.0-00010101000000-000000000000
 	gopkg.in/yaml.v2 v2.3.0
 )
+
+require github.com/nwmac/sqlitestore v0.0.0-20180824125213-7d2ab221fb3f
 
 require (
 	code.cloudfoundry.org/bytefmt v0.0.0-20180906201452-2aa6f33b730c // indirect
