@@ -5,15 +5,10 @@ go 1.18
 replace (
 	github.com/SermoDigital/jose => github.com/SermoDigital/jose v0.9.2-0.20180104203859-803625baeddc
 	github.com/Sirupsen/logrus => github.com/sirupsen/logrus v1.4.1
-	// bitbucket.org/liamstask/goose => ./vendor/bitbucket.org/liamstask/goose/cmd/goose
-	// github.com/antonlindstrom/pgstore => github.com/antonlindstrom/pgstore v1.0.0
-	//github.com/cf-stratos/mysqlstore => ./vendor/github.com/cf-stratos/mysqlstore
-	//github.com/cloudfoundry-community/go-cfenv => ./vendor/github.com/cloudfoundry-community/go-cfenv
 	github.com/cloudfoundry-incubator/stratos/src/jetstream/crypto => ./vendor/github.com/cloudfoundry/stratos/tree/master/src/jetstream/crypto
 	github.com/cloudfoundry-incubator/stratos/src/jetstream/datastore => ./vendor/github.com/cloudfoundry/stratos/tree/master/src/jetstream/datastore
 	github.com/cloudfoundry-incubator/stratos/src/jetstream/plugins/autoscaler => ./vendor/github.com/cloudfoundry/stratos/tree/master/src/jetstream/plugins/autoscaler
 	github.com/cloudfoundry-incubator/stratos/src/jetstream/plugins/backup => ./vendor/github.com/cloudfoundry/stratos/tree/master/src/jetstream/plugins/backup
-	//github.com/cloudfoundry-incubator/stratos/src/jetstream/plugins/cfapppush => ./vendor/github.com/cloudfoundry/stratos/tree/master/src/jetstream/plugins/cfapppush
 	github.com/cloudfoundry-incubator/stratos/src/jetstream/plugins/cfappssh => ./vendor/github.com/cloudfoundry/stratos/tree/master/src/jetstream/plugins/cfappssh
 	github.com/cloudfoundry-incubator/stratos/src/jetstream/plugins/cloudfoundry => ./vendor/github.com/cloudfoundry/stratos/tree/master/src/jetstream/plugins/cloudfoundry
 	github.com/cloudfoundry-incubator/stratos/src/jetstream/plugins/cloudfoundryhosting => ./vendor/github.com/cloudfoundry/stratos/tree/master/src/jetstream/plugins/cloudfoundryhosting
@@ -35,10 +30,8 @@ replace (
 	github.com/gorilla/context => github.com/gorilla/context v1.1.1
 	github.com/gorilla/sessions => github.com/gorilla/sessions v1.2.1
 	github.com/govau/cf-common/env => ./vendor/github.com/govau/cf-common/tree/master/env
-	//github.com/labstack/echo => github.com/labstack/echo v1
 	github.com/labstack/echo/middleware => ./vendor/github.com/labstack/echo/tree/master/middleware
 	github.com/russross/blackfriday v2.0.0+incompatible => github.com/russross/blackfriday v1.5.2
-	//github.com/nwmac/sqlitestore => github.com/nwmac/sqlitestore v1.0.0
 	github.com/satori/go.uuid => github.com/satori/go.uuid v1.2.0
 	github.com/sergi/go-diff => github.com/sergi/go-diff v1.0.0
 	github.com/smartystreets/goconvey => github.com/smartystreets/goconvey v0.0.0-20160503033757-d4c757aa9afd
@@ -66,13 +59,12 @@ require (
 	github.com/labstack/echo v3.3.10+incompatible
 	github.com/mattn/go-sqlite3 v1.13.0
 	github.com/mholt/archiver v3.1.1+incompatible
-	//github.com/nwmac/sqlitestore v0.0.0-20180824125213-7d2ab221fb3f
 	github.com/satori/go.uuid v1.2.0
 	github.com/sirupsen/logrus v1.3.0
-	github.com/smartystreets/goconvey v0.0.0-20190222223459-a17d461953aa
-	golang.org/x/crypto v0.0.0-20190513172903-22d7a77e9e5f
+	github.com/smartystreets/goconvey v1.6.4
+	golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4
 	gopkg.in/DATA-DOG/go-sqlmock.v1 v1.0.0-00010101000000-000000000000
-	gopkg.in/yaml.v2 v2.3.0
+	gopkg.in/yaml.v2 v2.4.0
 )
 
 require github.com/nwmac/sqlitestore v0.0.0-20180824125213-7d2ab221fb3f
@@ -85,6 +77,9 @@ require (
 	code.cloudfoundry.org/lager v2.0.0+incompatible // indirect
 	code.cloudfoundry.org/ykk v0.0.0-20170424192843-e4df4ce2fd4d // indirect
 	github.com/Azure/go-ansiterm v0.0.0-20170929234023-d6e3b3328b78 // indirect
+	github.com/KyleBanks/depth v1.2.1 // indirect
+	github.com/PuerkitoBio/purell v1.1.1 // indirect
+	github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578 // indirect
 	github.com/SermoDigital/jose v0.9.1 // indirect
 	github.com/Sirupsen/logrus v0.0.0-00010101000000-000000000000 // indirect
 	github.com/apoydence/eachers v0.0.0-20181020210610-23942921fe77 // indirect
@@ -104,24 +99,34 @@ require (
 	github.com/elazarl/goproxy v0.0.0-20200315184450-1f3cb6622dad // indirect
 	github.com/elazarl/goproxy/ext v0.0.0-20200315184450-1f3cb6622dad // indirect
 	github.com/fatih/color v1.7.0 // indirect
+	github.com/go-openapi/jsonpointer v0.19.5 // indirect
+	github.com/go-openapi/jsonreference v0.19.6 // indirect
+	github.com/go-openapi/spec v0.20.4 // indirect
+	github.com/go-openapi/swag v0.19.15 // indirect
 	github.com/gogo/protobuf v1.2.1 // indirect
+	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
 	github.com/golang/snappy v0.0.1 // indirect
 	github.com/google/go-querystring v1.0.0 // indirect
 	github.com/gopherjs/gopherjs v0.0.0-20190411002643-bd77b112433e // indirect
 	github.com/jessevdk/go-flags v1.4.0 // indirect
+	github.com/josharian/intern v1.0.0 // indirect
 	github.com/jtolds/gls v4.20.0+incompatible // indirect
 	github.com/konsorten/go-windows-terminal-sequences v1.0.1 // indirect
 	github.com/kr/pty v1.1.8 // indirect
 	github.com/kylelemons/go-gypsy v0.0.0-20160905020020-08cad365cd28 // indirect
-	github.com/labstack/gommon v0.3.0 // indirect
+	github.com/labstack/echo/v4 v4.7.2 // indirect
+	github.com/labstack/gommon v0.3.1 // indirect
 	github.com/lib/pq v1.1.0 // indirect
 	github.com/lunixbochs/vtclean v1.0.0 // indirect
-	github.com/mailru/easyjson v0.0.0-20190221075403-6243d8e04c3f // indirect
-	github.com/mattn/go-colorable v0.1.4 // indirect
-	github.com/mattn/go-isatty v0.0.10 // indirect
+	github.com/mailru/easyjson v0.7.7 // indirect
+	github.com/mattn/go-colorable v0.1.11 // indirect
+	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/mattn/go-runewidth v0.0.4 // indirect
 	github.com/mitchellh/mapstructure v1.1.2 // indirect
 	github.com/moby/moby v1.13.1 // indirect
+	github.com/nats-io/nats.go v1.15.0 // indirect
+	github.com/nats-io/nkeys v0.3.0 // indirect
+	github.com/nats-io/nuid v1.0.1 // indirect
 	github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d // indirect
 	github.com/nwaples/rardecode v1.0.0 // indirect
 	github.com/onsi/ginkgo v1.11.0 // indirect
@@ -131,16 +136,22 @@ require (
 	github.com/pkg/errors v0.8.1 // indirect
 	github.com/sabhiram/go-gitignore v0.0.0-20180611051255-d3107576ba94 // indirect
 	github.com/smartystreets/assertions v0.0.0-20190401211740-f487f9de1cd3 // indirect
+	github.com/swaggo/echo-swagger v1.3.2 // indirect
+	github.com/swaggo/files v0.0.0-20210815190702-a29dd2bc99b2 // indirect
+	github.com/swaggo/swag v1.8.1 // indirect
 	github.com/tedsuo/rata v1.0.0 // indirect
 	github.com/ulikunitz/xz v0.5.6 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
-	github.com/valyala/fasttemplate v1.1.0 // indirect
+	github.com/valyala/fasttemplate v1.2.1 // indirect
 	github.com/vito/go-interact v0.0.0-20171111012221-fa338ed9e9ec // indirect
 	github.com/xi2/xz v0.0.0-20171230120015-48954b6210f8 // indirect
 	github.com/ziutek/mymysql v1.5.4 // indirect
-	golang.org/x/net v0.0.0-20190420063019-afa5a82059c6 // indirect
+	golang.org/x/net v0.0.0-20220425223048-2871e0cb64e4 // indirect
 	golang.org/x/sys v0.0.0-20220503163025-988cb79eb6c6 // indirect
-	golang.org/x/text v0.3.0 // indirect
+	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
+	golang.org/x/text v0.3.7 // indirect
+	golang.org/x/time v0.0.0-20201208040808-7e3f01d25324 // indirect
+	golang.org/x/tools v0.1.10 // indirect
 	google.golang.org/appengine v1.5.0 // indirect
 	gopkg.in/cheggaaa/pb.v1 v1.0.27 // indirect
 )
