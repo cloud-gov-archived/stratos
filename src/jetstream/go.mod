@@ -10,6 +10,8 @@ replace (
 	github.com/smartystreets/goconvey => github.com/smartystreets/goconvey v0.0.0-20160503033757-d4c757aa9afd
 	github.com/spf13/cobra => github.com/spf13/cobra v0.0.3
 	gopkg.in/DATA-DOG/go-sqlmock.v1 => github.com/DATA-DOG/go-sqlmock v1.1.3
+	github.com/docker/docker => github.com/moby/moby v0.7.3-0.20190826074503-38ab9da00309
+	k8s.io/api => github.com/kubernetes/api latest
 )
 
 require (
@@ -42,10 +44,12 @@ require (
 )
 
 require (
+	helm.sh/helm/v3/pkg/kube v3.9.0 // indirect
 	github.com/alecthomas/template latest  // indirect
-	github.com/labstack/echo v1  // indirect
+	github.com/labstack/echo  v1.0.0 // indirect
 	github.com/swaggo/echo-swagger v1.3.2  // indirect
 	github.com/swaggo/swag v1.6.7  // indirect
+	github.com/deislabs/oras v0.8.0 // indirect
 	code.cloudfoundry.org/bytefmt v0.0.0-20180906201452-2aa6f33b730c // indirect
 	code.cloudfoundry.org/cfnetworking-cli-api v0.0.0-20190103195135-4b04f26287a6 // indirect
 	code.cloudfoundry.org/diego-ssh v0.0.0-20200312183824-517d22c5d890 // indirect
