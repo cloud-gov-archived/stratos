@@ -34,7 +34,7 @@ go env
 
 # Need to install swag in both cases
 echo "Generating OpenAPI documentation..."
-go get github.com/swaggo/swag/cmd/swag
+go get github.com/swaggo/swag/cmd/swag@1.8.2
 swag init
 
 if [ "${ACTION}" == "build" ]; then
