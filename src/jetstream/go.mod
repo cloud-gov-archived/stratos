@@ -42,6 +42,10 @@ require (
 )
 
 require (
+	github.com/alecthomas/template latest  // indirect
+	github.com/labstack/echo v1  // indirect
+	github.com/swaggo/echo-swagger v1.3.2  // indirect
+	github.com/swaggo/swag v1.6.7  // indirect
 	code.cloudfoundry.org/bytefmt v0.0.0-20180906201452-2aa6f33b730c // indirect
 	code.cloudfoundry.org/cfnetworking-cli-api v0.0.0-20190103195135-4b04f26287a6 // indirect
 	code.cloudfoundry.org/diego-ssh v0.0.0-20200312183824-517d22c5d890 // indirect
