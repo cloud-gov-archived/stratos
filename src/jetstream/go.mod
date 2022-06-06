@@ -11,7 +11,7 @@ replace (
 	github.com/spf13/cobra => github.com/spf13/cobra v0.0.3
 	gopkg.in/DATA-DOG/go-sqlmock.v1 => github.com/DATA-DOG/go-sqlmock v1.1.3
 	github.com/docker/docker => github.com/moby/moby v0.7.3-0.20190826074503-38ab9da00309
-	k8s.io/api => github.com/kubernetes/api latest
+	k8s.io/api => github.com/kubernetes/api v0.24.1
 )
 
 require (
@@ -44,8 +44,8 @@ require (
 )
 
 require (
-	helm.sh/helm/v3/pkg/kube v3.9.0 // indirect
-	github.com/alecthomas/template latest  // indirect
+	helm.sh/helm/v3/pkg/kube/v3 v3.9.0 // indirect
+	github.com/alecthomas/template v1.0.0  // indirect
 	github.com/labstack/echo  v1.0.0 // indirect
 	github.com/swaggo/echo-swagger v1.3.2  // indirect
 	github.com/swaggo/swag v1.6.7  // indirect
