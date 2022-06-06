@@ -1,8 +1,20 @@
-module github.com/cloudfoundry-incubator/stratos/src/jetstream
+module github.com/cloudfoundry/stratos/src/jetstream
 
 go 1.18
 
 replace (
+  k8s.io/client-go => k8s.io/client-go v0.24.1 
+	k8s.io/apiserver => k8s.io/kubernetes/staging/src/k8s.io/apiserver v0.0.0-20191001043732-d647ddbd755f
+	github.com/cloudfoundry-incubator/stratos/src/jetstream/repository/interfaces => github.com/cloudfoundry-incubator/stratos/src/jetstream/repository/interfaces v0.0.0-00010101000000-000000000000
+	k8s.io/metrics => k8s.io/kubernetes/staging/src/k8s.io/metrics v0.0.0-20191001043732-d647ddbd755f
+	k8s.io/cli-runtime => k8s.io/kubernetes/staging/src/k8s.io/cli-runtime v0.0.0-20191001043732-d647ddbd755f
+	k8s.io/component-base => k8s.io/kubernetes/staging/src/k8s.io/component-base v0.0.0-20191001043732-d647ddbd755f
+	k8s.io/code-generator => k8s.io/kubernetes/staging/src/k8s.io/code-generator v0.0.0-20191001043732-d647ddbd755f
+	k8s.io/apimachinery => k8s.io/kubernetes/staging/src/k8s.io/apimachinery v0.0.0-20191001043732-d647ddbd755f
+	k8s.io/kubectl => k8s.io/kubernetes/staging/src/k8s.io/kubectl v0.0.0-20191001043732-d647ddbd755f
+	k8s.io/apiextensions-apiserver => k8s.io/kubernetes/staging/src/k8s.io/apiextensions-apiserver v0.0.0-20191001043732-d647ddbd755f
+	github.com/cloudfoundry-incubator/stratos/src/jetstream/plugins/kubernetes => ./plugins/kubernetes
+	github.com/cloudfoundry-incubator/stratos/src/jetstream/plugins/monocular => ./plugins/monocular
 	github.com/SermoDigital/jose => github.com/SermoDigital/jose v0.9.2-0.20180104203859-803625baeddc
 	github.com/Sirupsen/logrus => github.com/sirupsen/logrus v1.4.1
 	github.com/russross/blackfriday v2.0.0+incompatible => github.com/russross/blackfriday v1.5.2
@@ -15,6 +27,7 @@ replace (
 )
 
 require (
+	k8s.io/client-go v0.24.1
 	bitbucket.org/liamstask/goose v0.0.0-20150115234039-8488cc47d90c
 	code.cloudfoundry.org/cli v6.49.0+incompatible
 	github.com/antonlindstrom/pgstore v0.0.0-20170604072116-a407030ba6d0
@@ -44,8 +57,8 @@ require (
 )
 
 require (
-	helm.sh/helm/v3/pkg/kube/v3 v3.9.0 // indirect
-	github.com/alecthomas/template v1.0.0  // indirect
+	helm.sh/helm/v3 v3.9.0 // indirect
+	github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751
 	github.com/labstack/echo  v1.0.0 // indirect
 	github.com/swaggo/echo-swagger v1.3.2  // indirect
 	github.com/swaggo/swag v1.6.7  // indirect
